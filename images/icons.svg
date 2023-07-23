@@ -74,5 +74,7 @@
      <symbol id="send" viewBox="0 0 32 32">
       <path fill="#fff" style="fill:var(--color1, #fff)" d="m32 2.67-32 15 10.23 3.15L26 8.5 14 21.99h.01H14v7.34l5.74-5.57L27 26l5-23.33z"/>
     </symbol>
+     <symbol id="burger" viewBox="0 0 47 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="4.36" d="M1.96 29.15h42.97M1.96 15.62h42.97M1.96 2.08h42.97"/>
   </defs>
 </svg>
