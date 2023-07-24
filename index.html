@@ -546,13 +546,14 @@
     </div> -->
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-toggle close js-close-menu">
         <svg
+          class="menu-toggle-icon-close"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="8"
+          height="8"
         >
           <path
             fill-rule="evenodd"
@@ -563,10 +564,59 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link accent link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <address class="mobile-address">
+        <ul class="list">
+          <li>
+            <a class="phone link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="email link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="logo-list list">
+        <li class="logo-item">
+          <a class="logo-link" href="" aria-label="Instagram">
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="logo-item">
+          <a class="logo-link" href="" aria-label="Twitter">
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="logo-item">
+          <a class="logo-link" href="" aria-label="Facebook">
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="logo-item">
+          <a class="logo-link" href="" aria-label="Linkedin">
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <script src="./js/modal.js"></script>
