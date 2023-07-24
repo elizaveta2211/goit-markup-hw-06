@@ -191,7 +191,11 @@ img {
     letter-spacing: 0.03em;
     color: var(--iris-cl);
     text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+   .logo.link {
     margin-right: 120px;
+  }
 }
 @media only screen and (min-width: 1158px) {
 .logo.link {
@@ -245,8 +249,6 @@ img {
 */
 .hero {
     background-color: var(--navyblue-cl);
-    background-image: url(../images/hero-bg.jpg);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -255,17 +257,59 @@ img {
     padding-bottom: 188px;
     max-width: 1440px;
     margin: 0 auto;
+    background-image: url(../images/hero-mobile-bg@1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile-bg@1x.jpg);
+
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero {
+    background-image: url(../images/hero-mobile-bg@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile-bg@2x.jpg);
+  }
+}
+@media only screen and (min-width: 428px) {
+.hero {
+    background-image: url(../images/hero-tablet-bg@1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet-bg@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../images/hero-tablet-bg@2x.jpg);
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet-bg@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+.hero {
+    background-image: url(../images/hero-bg@1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../images/hero-bg@1x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg@1x.jpg);
+    } 
+  }
 }
 .hero-title {
     color: var(--white-cl);
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin: 0 auto;
     max-width: 496px;
     margin-bottom: 48px;
 }
+@media only screen and (min-width: 768px) {
+.hero-title{
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
 .accent.button {
     background-color: var(--iris-cl);
     color: var(--white-cl);
@@ -605,8 +649,28 @@ img {
     padding-bottom: 100px;
 }
 .footer .container {
+    text-align: center;
+    
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+.footer .container{
+    padding: 0 108px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+.footer .container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+.footer .container {
+    flex-wrap: nowrap;
+  }
 }
 .studio-light {
     color: var(--cloud-cl);
@@ -616,17 +680,29 @@ img {
 }
 .footer .text {
     color: var(--cloud-cl);
-    width: 264px;
+    margin: 0 auto;
 }
 .footer .logo-list {
     gap: 16px;
 }
 .logo-container {
-    margin-right: 120px;
+    margin-bottom: 72px;
+    
 }
 .social-container {
-    width: 208px;
+    margin-bottom: 72px;
+    
+}
+@media only screen and (min-width: 1158px) {
+  .logo-container {
+    margin-right: 120px;
+  }
+  .social-container {
     margin-right: 80px;
+  }
+}
+.logo-container .text {
+    width: 264px;
 }
 .social-container .text {
     color: var(--white-cl);
@@ -652,15 +728,19 @@ img {
 }
 
 .subscribe-form {
+    
+    
+}
+@media only screen and (min-width: 768px) {
+.subscribe-form{
     display: flex;
     gap: 24px;
-
+  }
 }
-
 .subscribe-form-label {}
 
 .subscribe-form-input {
-    width: 264px;
+    width: 100%;
     height: 40px;
     padding: 8px 16px;
     background-color: transparent;
@@ -673,6 +753,16 @@ img {
     border: 1px solid var(--white-cl);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
+}
+@media only screen and (max-width: 767px) {
+.subscribe-form-input {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+.subscribe-form-input {
+    width: 264px;
+  }
 }
 .subscribe-form-input::placeholder {
     color: currentColor;
